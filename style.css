@@ -1,0 +1,319 @@
+
+body{
+	font-family: 'Open Sans';
+}
+
+
+.titulo1{
+	
+	background: #C9D9EF;
+	width: 100%;
+	height: 20%;
+	border-radius: 10px;
+}
+
+.titulo2{
+	
+	background: #C9D9EF;
+	width: 100%;
+	height: 7%;
+	border-radius: 10px;
+
+}
+
+.titulo2 h3{
+	margin-top: 5px;
+	position: absolute;
+	margin-left: 10px;
+}
+
+.titulo1 h3{
+	margin-top: 5px;
+	position: absolute;
+	margin-left: 10px;
+}
+.imageDiv{
+
+	margin: 0;
+	height: 150px;
+    /*ancho fijo! (para el scroll). En nuestro caso siempre son 20 elementos. Sino habria que cambiar este parametro desde javascript*/
+    width: 2805px;
+}
+
+.scroll{
+	overflow-x: scroll;
+	overflow-y: hidden;
+	height: 150px;
+}
+
+.wrapper{
+	background:#F3E7CA; 
+	margin: auto; 
+	text-align: center; 
+	position: relative;
+	border-radius: 5px;
+	margin-bottom: 20px !important;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.imageDiv img{
+	box-shadow: 1px 1px 10px #999; 
+	margin: 2px;
+	max-height: 90%;
+	cursor: pointer;
+    display:inline-block
+}
+
+
+#icon{
+	width: 30%;
+	margin: 1%;
+}
+
+#logo{
+	width: 50%;
+	margin: 6%;
+}
+
+#top{
+	margin: 1%;
+	height: 200px;
+}
+
+.searchblock{
+	width: 50%;
+	float:left;
+	margin-top: 1%;
+	margin-left: 15px;
+
+}
+
+#searchbtn{
+	width: 20px;
+	height: 20px;
+	margin-left: 3%;
+	cursor: pointer;
+}
+
+#buscador{
+	margin: 1%;
+	height: 50px;
+	background-color: rgba(1,1,1,0.2);
+	border-radius: 10px;
+}
+
+#info{
+	width: 90%;
+	background-color: transparent;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: black;
+	outline: 0;
+	color: black;
+}
+
+
+
+#resultats{
+	width: 48%;
+	margin-left: 1%;
+	float: left;
+	height: 500px;
+}
+
+#element{
+	margin-bottom: 2%;
+	padding-left: 20px;
+	margin-right: 40px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+#reproductor{
+	
+	width: 48%;
+	height: 500px;
+	margin: 1%;
+	margin-left: 55%;
+
+
+}
+
+#recomenats{
+	margin: 1%;
+	height: 200px;
+}
+
+
+
+footer{
+	background-color: grey;
+	border-radius: 10px;
+	height: 250px;
+}
+
+#Salle{
+	padding-left: 2%;
+	padding-top: 10px;
+	margin-bottom: 2%;
+}
+
+#Flor, #Neus{
+	padding-left: 5%;
+	margin: 1%;
+}
+
+
+
+#resultats li{
+	float: left;
+}
+
+#resultats img{
+	margin-left: 12%;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+}
+
+#image img{
+	width: 300px;
+	height: 300px;
+	
+}
+
+#image{
+
+	transition:all 1s ease-in-out;
+	backface-visibility: hidden;
+	position: absolute;
+	width: 300px;
+	height: 300px;
+}
+
+#card{
+	width: 300px;
+	height: 300px;
+	margin-left: 10%;
+	margin-top: 100px;
+	float: left;
+	position: absolute;
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+  
+
+  	
+}
+
+#backFace{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	text-align: center;
+
+	background-image: url("img/disco.png");
+	background-size: 300px 300px;
+
+	backface-visibility: hidden;
+	transform:rotateY(-180deg);
+	transition:all 1s ease-in-out;
+
+	-webkit-transform-style: preserve3d;
+	
+}
+
+
+#card:hover #image{
+	transform:rotateY(180deg);
+}
+
+#card:hover #backFace{
+	transform:rotateY(0deg);
+}
+
+#musicBox{
+	height: 500px;
+	position: absolute;
+	margin-left: 3%;
+}
+
+audio{
+	width: 400px;
+	margin-left: 6.5%;
+	position: absolute;
+	margin-top: 460px;
+}
+
+#detail{
+	width: 245px;
+	height: 300px;
+	margin-left: 57%;
+	border: 3px solid #000000;
+	
+
+}
+
+.copy-right{
+	margin-left: 40%;
+}
+
+
+.backBtn{
+	margin-left: 40%;
+	margin-top: -26px;
+	position: absolute;	
+}
+
+#list{
+	background:#F3E7CA;
+	border-radius: 10px; 	
+	height: 92%;
+	margin-top: 0;
+	overflow: auto;
+}
+
+
+
+#list ul div li{
+	list-style: none;
+	width: 80%;
+	height: 20px;
+	min-height: 15px;
+	overflow: hidden;
+	float:left;
+
+}
+
+#list ul{
+	margin-left: -5px;
+}
+
+#SN img{
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	float: left;
+	margin-left: 5%;
+}
+
+#SN{
+	margin-left: 50%;
+	margin-top: -140px;
+}
+
+#link{
+
+	margin-top: 415px;
+	position: absolute;
+	color: rgb(108, 85, 60);
+	margin-left: 18%;
+}
+
+#rb1, #rb2, #rb3{
+	margin-top: 20px;
+}
+
+#rb2, #rb3{
+	margin-left: 30px;
+}
