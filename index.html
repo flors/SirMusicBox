@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>SirMusicBox</title>
+
+		<meta name="author" content="Flor Salatino i Neus Perez">
+		<meta name="description" content="Practica">
+
+		<!-- Main styles -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body>
+
+		<header>
+			<img id="icon" src="img/logoSir.png" alt="SirMusicBox">
+			<img id="logo" src="img/Logo.png" alt="SirMusicBox">
+		</header>
+
+		<section id="top">
+			<div class="titulo1">
+				<h3>Most played</h3>
+			</div>
+			<div class="wrapper"> 
+				<div class="scroll">
+				<div  id="listaTop" class="imageDiv"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="buscador">
+			<div class="searchblock">
+				<input type="text" name="buscador" placeholder="Buscar" id="info">
+				<img id="searchbtn" src="img/search.png">
+			</div>
+
+			<form class="options">
+				<input id="rb1" type="radio" name="rb" value="track" checked>Track      
+				<input id="rb2" type="radio" name="rb" value="artist">Artist  
+				<input id="rb3" type="radio" name="rb" value="album">Album  
+			</form>
+
+		</section>
+
+
+		<section id="resultats">
+			
+			<div class="titulo2">
+				<h3>Search results</h3>
+			</div>
+
+			<div id="back" class="backBtn"></div>
+			<div id="list"> </div>
+
+		</section>
+
+		<section id="reproductor">
+			
+			<img id="musicBox" src="img/player.png" alt="p">
+
+			<div id="card">
+				<div id="backFace"> 
+					<h2 id="songI"></h2>
+					
+					<h2 id="artistI"></h2>
+		
+					<h2 id="albumI"></h2>
+				</div>
+				<div id="image"></div>
+			</div>
+	
+			<a id="link" href=""></a>
+
+			<audio autoplay=true id="player"src="" controls></audio>
+		</section>
+
+		<section id="Recomanats">
+			<div class="titulo1">
+				<h3>Recommended</h3>
+			</div>
+
+			<div class="wrapper"> 
+				<div class="scroll">
+					<div class="imageDiv" id="listaRecom">
+
+					</div>
+				</div>
+			</div>	
+		</section>
+
+
+
+		<footer>
+
+			<section id="Salle">
+					<h4>URL La Salle, Programacio Hipermedia</h4>
+			</section>
+
+			<section>
+				<address id="Flor">
+					<span>Flor Salatino (ls27097)</span>
+				</address>
+				<address id="Neus">
+					<span>Neus Perez (ls27628)</span>
+				</address>
+			</section>
+			
+			<section id="SN">
+				<h4>SirBox</h4>
+				<a href="http://socialgrups.net/sirbox/"><img src="img/Icon.jpg" alt="Oficial Web"></a>
+				<a href="https://www.facebook.com/SirBoxProductions"><img src="img/FB.png" alt="Facebook"></a>
+				<a href="https://twitter.com/SirBoxProd"><img src="img/Twitter.png" alt="Twitter"></a>
+				<a href="https://www.youtube.com/user/SirBoxProductions"><img src="img/YouTube.png" alt="YouTube"></a>
+			</section>
+
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>
